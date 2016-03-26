@@ -3,7 +3,7 @@
  */
 package com.soccerfaces.ui;
 
-import javax.faces.bean.ManagedBean;
+import javax.annotation.ManagedBean;
 import javax.inject.Named;
 
 import org.springframework.context.annotation.Scope;

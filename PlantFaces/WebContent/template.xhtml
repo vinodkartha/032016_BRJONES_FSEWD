@@ -7,9 +7,12 @@
 
 <h:head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<h:outputStylesheet library="css" name="default.css" />
-	<link rel="styesheet" href="css/default.css" type="text/css" />
+	<h:outputStylesheet library="css" name="default.css" />
+	<link rel="stylesheet" href="css/default.css" type="text/css" />
 	<h:outputStylesheet library="css" name="cssLayout.css" />
+	<link rel="stylesheet" media="screen" href="css/styles.css" type="text/css" />
+	<link rel="stylesheet" media="print" href="css/print.css" type="text/css" />
+	<link rel="stylesheet" media="{max-width: 800px]" href="css/print.css" type="text/css" />
 	<title><ui:insert name="title"></ui:insert></title>
 </h:head>
 
@@ -26,10 +29,12 @@
 		</div>
 		<div id="bottom" class="bottom">
 			<ui:insert name="bottom">Copyright 2016 SoccerFaces.com 
-			<br/>
-			<h:link
-					outcome="privacy" value="Privacy policy and terms of use" />
+			<br />
+				<h:link outcome="privacy" value="Privacy policy and terms of use" />
 			</ui:insert>
+		</div>
+		<div class="printonly">
+			<p:outputLabel value="Printed from SoccerFaces.com"/>
 		</div>
 	</div>
 </h:body>
