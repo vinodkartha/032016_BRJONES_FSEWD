@@ -6,14 +6,14 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:body>
 	<ui:composition template="template.xhtml">
-		<ui:define name="title">SoccerFaces.com: Promoting soccer diversity through education</ui:define>
-		<ui:define name="top">SoccerFaces.com: Promoting soccer diversity through education</ui:define>
+		<ui:define name="title">PlantFaces.com: Promoting soccer diversity through education</ui:define>
+		<ui:define name="top">PlantFaces.com: Promoting soccer diversity through education</ui:define>
 		<ui:define name="content">
-			<h1>Welcome to Soccer Faces.com!</h1>
-Enter a Soccer league name and then hit Search
+			<h1>Welcome to Plant Faces.com!</h1>
+Enter a plant name and then hit Search
 <h:form>
-				<p:autoComplete completeMethod="#{searchSoccer.completeSoccer}" value="#{soccer.associationName}"/>
-				<p:commandButton value="Submit" actionListener="#{searchSoccer.execute}" />
+				<p:autoComplete completeMethod="#{searchPlants.completePlant}" value="#{plant.name}"/>
+				<p:commandButton value="Submit" actionListener="#{searchPlants.execute}" />
 			</h:form>
 			<br/>
 Association football, more commonly known as football or soccer,[3] is a sport played between two teams of 

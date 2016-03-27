@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.soccerfaces.ui;
+package com.plantfaces.ui;
 
 import javax.annotation.ManagedBean;
 import javax.inject.Named;
